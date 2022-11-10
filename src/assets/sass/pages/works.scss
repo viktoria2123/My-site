@@ -1,0 +1,83 @@
+// & == .works
+.works {
+    padding-bottom: 128px;
+
+    &__description {
+        padding-top: 135px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            padding-top: 78px;
+            flex-direction: column;
+            line-height: 48px;
+        }
+    }
+
+    &__title {
+        @media (max-width: $tablet) {
+            padding-bottom: 48px;
+        }
+    }
+
+    &__description-text {
+        max-width: 541px;
+    }
+
+    &__box-content-title {
+        padding-top: 14px;
+    }
+
+    &__box-content-title:after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: $color-gray-border;
+        width: 85px;
+        min-width: 45px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box {
+        padding-top: 128px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        @media (max-width: $tablet) {
+            padding-top: 0px;
+        }
+
+    }
+
+    &__box-items {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            flex-direction: column-reverse;
+            padding-top: 48px;
+        }
+
+    }
+
+
+
+
+    &__box-content-text {
+        padding-top: 24px;
+    }
+
+    &__box-content-year {
+        padding-bottom: 39px;
+        color: $color-dark-gray;
+    }
+
+    &__box-img {
+        max-width: 544px;
+    }
+
+}
