@@ -78,6 +78,10 @@
 
     &__box-img {
         max-width: 544px;
+        @media (max-width: $tablet) {
+            max-width: 100%;
+        }
+        
     }
 
 }
