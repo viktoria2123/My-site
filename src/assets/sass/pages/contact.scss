@@ -1,0 +1,58 @@
+.contact {
+    &__description {
+        display: flex;
+        flex-direction: row;
+        gap: 313px;
+        margin-top: 130px;
+
+        @media (max-width: $tablet) {
+            gap: 42px;
+            flex-direction: column;
+            margin-top: 73px;
+        }
+    }
+
+    &__title {
+        max-width: 263px;
+    }
+
+    &__description-text {
+        max-width: 543px;
+        color: $color-dark-gray;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin: 128px 0 69px;
+        max-width: 288px;
+    }
+
+    &__info-title {
+        padding-bottom: 24px;
+    }
+
+    &__adress {
+        padding-bottom: 21px;
+        color: $color-dark-gray;
+    }
+
+    &__tel {
+        padding-bottom: 22px;
+        color: $color-dark-gray;
+    }
+
+    &__mail {
+        color: $color-dark-gray;
+    }
+
+    &__info-link-title {
+        margin-bottom: 25px;
+    }
+
+    &__info-item {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
