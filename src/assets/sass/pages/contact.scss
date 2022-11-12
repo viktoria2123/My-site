@@ -26,10 +26,21 @@
         flex-direction: column;
         margin: 128px 0 69px;
         max-width: 288px;
+
+        @media (max-width: $tablet) {
+            margin: 64px 0 51px;
+        }
+
     }
 
     &__info-title {
         padding-bottom: 24px;
+
+        @media (max-width: $tablet) {
+            padding-bottom: 40px;
+        }
+
+
     }
 
     &__adress {
