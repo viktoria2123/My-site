@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    &__modal {
+        max-width: 542px;
+        width: 100%;
+        margin-top: 128px;
+    }
+
+
+    &__title {
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        color: $color-dark-gray;
+        display: block;
+    }
+
+    &__input {
+        color: $color-gray-500;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        padding: 16px 0px 8px;
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid $color-black;
+        cursor: pointer;
+
+        &:focus {
+            border-bottom: 2px solid green;
+        }
+
+        &:hover {
+            border-bottom: 2px solid blue;
+        }
+
+        &::placeholder {
+            color: $color-gray-500;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+        }
+    }
+
+}

@@ -66,4 +66,26 @@
         flex-direction: row;
         gap: 24px;
     }
+
+    &__box {
+        display: flex;
+        gap: 290px;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            gap: 65px;
+        }
+    }
+
+    &__modal {
+        max-width: 542px;
+        width: 100%;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+
+    &__btn {
+        margin-top: 64px;
+    }
 }
