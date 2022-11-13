@@ -26,15 +26,21 @@ body {
     height: 45px;
     left: 739px;
     top: 674px;
+    letter-spacing: 0.1em;
     background: #565656;
     color: $color-white;
     cursor: pointer;
+
+    &--icon {
+        &::after {
+            content: '→';
+            padding-left: 8px;
+            color: $color-white;
+        }
+    }
+
 }
 
-.button:after {
-        content: '→';
-        padding-left: 8px;
-    }
 
 
 
