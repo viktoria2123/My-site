@@ -30,11 +30,11 @@
         cursor: pointer;
 
         &:focus {
-            border-bottom: 2px solid green;
+            border-bottom: 2px solid orange;
         }
 
         &:hover {
-            border-bottom: 2px solid blue;
+            border-bottom: 2px solid orange;
         }
 
         &::placeholder {
