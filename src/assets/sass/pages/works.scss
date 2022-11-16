@@ -76,6 +76,12 @@
         color: $color-dark-gray;
     }
 
+    &__box-content-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &__box-img {
         max-width: 544px;
         @media (max-width: $tablet) {

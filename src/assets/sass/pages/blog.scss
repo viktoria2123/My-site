@@ -77,6 +77,10 @@
         justify-content: start;
         gap: 40px;
         flex-wrap: wrap;
+
+        @media (max-width: $tablet) {
+            gap: 48px;
+        }
     }
 
     &__row-post {
@@ -93,7 +97,7 @@
         margin: 24px 0 24px;
     }
 
-    &__row-post-info-category, 
+    &__row-post-info-category,
     &__row-post-info-date {
         color: $color-gray-500;
 
@@ -101,6 +105,10 @@
 
     &__row-post-title {
         padding-bottom: 65px;
+
+        @media (max-width: $tablet) {
+            padding-bottom: 16px;
+        }
     }
 
     &__row-post-title-1 {
@@ -109,6 +117,10 @@
 
     &__row-post-text-1 {
         padding-bottom: 126px;
+
+        @media (max-width: $tablet) {
+            padding-bottom: 0px;
+        }
     }
 
     &__btn {
