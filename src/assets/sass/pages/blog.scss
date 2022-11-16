@@ -71,8 +71,52 @@
         }
     }
 
+    &__row {
+        margin-top: 48px;
+        display: flex;
+        justify-content: start;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    &__row-post {
+        width: 542px;
+    }
+
     &__row-post-img {
         max-width: 540px;
+    }
+
+    &__row-post-info {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0 24px;
+    }
+
+    &__row-post-info-category, 
+    &__row-post-info-date {
+        color: $color-gray-500;
+
+    }
+
+    &__row-post-title {
+        padding-bottom: 65px;
+    }
+
+    &__row-post-title-1 {
+        padding-bottom: 24px;
+    }
+
+    &__row-post-text-1 {
+        padding-bottom: 126px;
+    }
+
+    &__btn {
+        margin: 0 auto;
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
