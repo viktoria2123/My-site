@@ -56,6 +56,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
 
         @media (max-width: $tablet) {
             margin-top: 48px;
@@ -72,4 +73,68 @@
         }
 
     }
+
+    &__posts-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+
+    &__posts-title-text {
+        color: $color-gray-500;
+    }
+
+    &__posts {
+        display: flex;
+        gap: 34px;
+        margin-bottom: 128px;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 48px;
+            margin-bottom: 64px;
+        }
+    }
+
+    &__posts-post-tags {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 8px;
+            margin: 16px 0 24px;
+        }
+
+    }
+
+    &__posts-post-tags-tag,
+    &__posts-post-tags-date {
+        color: $color-gray-500;
+    }
+
+    &__posts-post-title {
+        padding-bottom: 65px;
+
+        @media (max-width: $tablet) {
+            padding-bottom: 24px;
+        }
+    }
+
+    &__posts-post-title1 {
+        padding-bottom: 24px;
+    }
+
+    &__posts-post-title2 {
+        padding-bottom: 62px;
+
+        
+    }
+
+    &__posts-post-text {
+        max-width: 350px;
+    }
+
+
 }
