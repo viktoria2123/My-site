@@ -80,10 +80,21 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 48px;
+        
+    }
+
+    &__posts-title-row {
+        display: flex;
+        position: relative;
+    }
+
+    &__posts-title-row-arrow {
+        position: absolute;
     }
 
     &__posts-title-text {
         color: $color-gray-500;
+        
     }
 
     &__posts {
@@ -131,7 +142,7 @@
     &__posts-post-title2 {
         padding-bottom: 62px;
 
-        
+
     }
 
     &__posts-post-text {
