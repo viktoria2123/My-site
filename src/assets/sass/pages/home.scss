@@ -1,156 +1,156 @@
 // & == .home
 
-.home {
+// .home {
 
-    &__titlle {
-        max-width: 709px;
-        margin: 128px 0;
+//     &__titlle {
+//         max-width: 709px;
+//         margin: 128px 0;
 
-        @media (max-width: $tablet) {
-            max-width: 288px;
-            font-weight: 400;
-            font-size: 33px;
-            line-height: 50px;
-            margin: 74px 0 40px;
-        }
-    }
+//         @media (max-width: $tablet) {
+//             max-width: 288px;
+//             font-weight: 400;
+//             font-size: 33px;
+//             line-height: 50px;
+//             margin: 74px 0 40px;
+//         }
+//     }
 
-    &__works {
-        display: flex;
-        gap: 32px;
-    }
+//     &__works {
+//         display: flex;
+//         gap: 32px;
+//     }
 
-    &__info {
-        display: flex;
-        justify-content: space-between;
-        gap: 210px;
-        margin: 128px 0;
+//     &__info {
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 210px;
+//         margin: 128px 0;
 
-        @media (max-width: $tablet) {
-            display: block;
-        }
-    }
+//         @media (max-width: $tablet) {
+//             display: block;
+//         }
+//     }
 
-    &__info-box-left {
-        width: 100%;
-    }
+// &__info-box-left {
+//     width: 100%;
+// }
 
-    &__info-box-left-text {
-        @media (max-width: $tablet) {
+// &__info-box-left-text {
+//     @media (max-width: $tablet) {
 
-            font-size: 19px;
-            line-height: 32px;
-        }
-    }
+//         font-size: 19px;
+//         line-height: 32px;
+//     }
+// }
 
-    &__info-box-left-text-2 {
-        padding-bottom: 48px;
+// &__info-box-left-text-2 {
+//     padding-bottom: 48px;
 
-        @media (max-width: $tablet) {
-            padding: 42px 0 28px;
-            font-size: 19px;
-            line-height: 32px;
-        }
+//     @media (max-width: $tablet) {
+//         padding: 42px 0 28px;
+//         font-size: 19px;
+//         line-height: 32px;
+//     }
 
-    }
+// }
 
-    &__info-box-right {
-        display: flex;
+// &__info-box-right {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     width: 100%;
+
+//     @media (max-width: $tablet) {
+//         margin-top: 48px;
+//     }
+// }
+
+
+// &__info-box-right-text {
+//     color: $color-dark-gray;
+
+//     @media (max-width: $tablet) {
+//         font-size: 16px;
+//         line-height: 166%;
+//     }
+
+// }
+
+&__posts-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+}
+
+&__posts-title-row {
+    display: flex;
+    position: relative;
+}
+
+&__posts-title-row-arrow {
+    position: absolute;
+}
+
+&__posts-title-text {
+    color: $color-gray-500;
+
+}
+
+&__posts {
+    display: flex;
+    gap: 34px;
+    margin-bottom: 128px;
+
+    @media (max-width: $tablet) {
         flex-direction: column;
-        gap: 20px;
-        width: 100%;
+        gap: 48px;
+        margin-bottom: 64px;
+    }
+}
 
-        @media (max-width: $tablet) {
-            margin-top: 48px;
-        }
+&__posts-post-tags {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        gap: 8px;
+        margin: 16px 0 24px;
     }
 
+}
 
-    &__info-box-right-text {
-        color: $color-dark-gray;
+&__posts-post-tags-tag,
+&__posts-post-tags-date {
+    color: $color-gray-500;
+}
 
-        @media (max-width: $tablet) {
-            font-size: 16px;
-            line-height: 166%;
-        }
+&__posts-post-title {
+    padding-bottom: 65px;
 
-    }
-
-    &__posts-title {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 48px;
-
-    }
-
-    &__posts-title-row {
-        display: flex;
-        position: relative;
-    }
-
-    &__posts-title-row-arrow {
-        position: absolute;
-    }
-
-    &__posts-title-text {
-        color: $color-gray-500;
-
-    }
-
-    &__posts {
-        display: flex;
-        gap: 34px;
-        margin-bottom: 128px;
-
-        @media (max-width: $tablet) {
-            flex-direction: column;
-            gap: 48px;
-            margin-bottom: 64px;
-        }
-    }
-
-    &__posts-post-tags {
-        display: flex;
-        justify-content: space-between;
-        margin: 24px 0;
-
-        @media (max-width: $tablet) {
-            flex-direction: column;
-            gap: 8px;
-            margin: 16px 0 24px;
-        }
-
-    }
-
-    &__posts-post-tags-tag,
-    &__posts-post-tags-date {
-        color: $color-gray-500;
-    }
-
-    &__posts-post-title {
-        padding-bottom: 65px;
-
-        @media (max-width: $tablet) {
-            padding-bottom: 24px;
-        }
-    }
-
-    &__posts-post-title1 {
+    @media (max-width: $tablet) {
         padding-bottom: 24px;
     }
+}
 
-    &__posts-post-title2 {
-        padding-bottom: 62px;
+&__posts-post-title1 {
+    padding-bottom: 24px;
+}
 
-
-    }
-
-    &__posts-post-text {
-        max-width: 350px;
-    }
+&__posts-post-title2 {
+    padding-bottom: 62px;
 
 
 }
+
+&__posts-post-text {
+    max-width: 350px;
+}
+
+
+
 
 .home-page {
 
@@ -180,5 +180,64 @@
         }
 
     }
+
+    //slider end
+
+    //info
+    .info {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            gap: 210px;
+            margin: 128px 0;
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
+        }
+
+        &__box-left {
+            width: 100%;
+        }
+
+        &__box-left-text {
+            @media (max-width: $tablet) {
+                font-size: 19px;
+                line-height: 32px;
+            }
+        }
+
+        &__box-left-text-2 {
+            padding-bottom: 48px;
+
+            @media (max-width: $tablet) {
+                padding: 42px 0 28px;
+                font-size: 19px;
+                line-height: 32px;
+            }
+        }
+
+        &__box-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            @media (max-width: $tablet) {
+                margin-top: 48px;
+            }
+        }
+
+        &__box-right-text {
+            color: $color-dark-gray;
+
+            @media (max-width: $tablet) {
+                font-size: 16px;
+                line-height: 166%;
+            }
+
+        }
+    }
+    //info end
 
 }
