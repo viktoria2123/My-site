@@ -74,7 +74,7 @@
     &__row {
         margin-top: 48px;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 40px;
         flex-wrap: wrap;
 
@@ -165,3 +165,5 @@
         }
     }
 }
+
+

@@ -80,7 +80,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 48px;
-        
+
     }
 
     &__posts-title-row {
@@ -94,7 +94,7 @@
 
     &__posts-title-text {
         color: $color-gray-500;
-        
+
     }
 
     &__posts {
@@ -149,5 +149,36 @@
         max-width: 350px;
     }
 
+
+}
+
+.home-page {
+
+    //home
+    .home {
+
+        &__titlle {
+            max-width: 709px;
+            margin: 128px 0;
+
+            @media (max-width: $tablet) {
+                max-width: 288px;
+                font-weight: 400;
+                font-size: 33px;
+                line-height: 50px;
+                margin: 74px 0 40px;
+            }
+        }
+    }
+
+    //slider 
+    .slider {
+
+        &__container {
+            display: flex;
+            gap: 32px;
+        }
+
+    }
 
 }
