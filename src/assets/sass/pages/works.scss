@@ -1,93 +1,160 @@
-// & == .works
-.works {
-    padding-bottom: 128px;
+.works-page {
 
-    &__description {
-        padding-top: 135px;
-        display: flex;
-        justify-content: space-between;
+    // & == .works
+    .works {
+        padding-bottom: 128px;
 
-        @media (max-width: $tablet) {
-            padding-top: 78px;
+        &__description {
+            padding-top: 135px;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: $tablet) {
+                padding-top: 78px;
+                flex-direction: column;
+                line-height: 48px;
+            }
+        }
+
+        &__title {
+            @media (max-width: $tablet) {
+                padding-bottom: 48px;
+            }
+        }
+
+        &__description-text {
+            max-width: 541px;
+        }
+
+    }
+
+    .content {
+        &__container {
+            display: flex;
             flex-direction: column;
-            line-height: 48px;
-        }
-    }
+            gap: 48px;
+            margin-bottom: 128px;
 
-    &__title {
-        @media (max-width: $tablet) {
-            padding-bottom: 48px;
-        }
-    }
-
-    &__description-text {
-        max-width: 541px;
-    }
-
-    &__box-content-title {
-        padding-top: 14px;
-    }
-
-    &__box-content-title:after {
-        content: '';
-        display: block;
-        height: 1px;
-        background: $color-gray-border;
-        width: 85px;
-        min-width: 45px;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__box {
-        padding-top: 128px;
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        @media (max-width: $tablet) {
-            padding-top: 0px;
+            @media (max-width: $tablet) {
+                padding-top: 0px;
+            }
         }
 
-    }
+        &__box {
+            display: flex;
+            justify-content: space-between;
 
-    &__box-items {
-        display: flex;
-        justify-content: space-between;
-
-        @media (max-width: $tablet) {
-            flex-direction: column-reverse;
-            padding-top: 48px;
+            @media (max-width: $tablet) {
+                flex-direction: column-reverse;   
+            }
         }
 
-    }
-
-
-
-
-    &__box-content-text {
-        padding-top: 24px;
-    }
-
-    &__box-content-year {
-        padding-bottom: 39px;
-        color: $color-gray-700;
-    }
-
-    &__box-content-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__box-img {
-        max-width: 544px;
-        @media (max-width: $tablet) {
-            max-width: 100%;
+        &__box-title {
+            @media (max-width: $tablet) {
+                padding-top: 24px;   
+            }
         }
-        
-    }
+        &__box-title::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: $color-gray-border;
+            width: 85px;
+            min-width: 45px;
+            margin-top: 16px;
+        }
 
+        &__box-text {
+            padding: 24px 0 16px;
+        }
+
+        &__box-year {
+            color: $color-gray-700;
+            padding-bottom: 39px;
+        }
+
+        &__box-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__box-img {
+            max-width: 544px;
+
+            @media (max-width: $tablet) {
+                max-width: 100%;
+            }
+        }
+
+
+    }
 }
+
+// &__box-content-title {
+//     padding-top: 14px;
+// }
+
+// &__box-content-title:after {
+//     content: '';
+//     display: block;
+//     height: 1px;
+//     background: $color-gray-border;
+//     width: 85px;
+//     min-width: 45px;
+// }
+
+// &__content {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// &__box {
+//     padding-top: 128px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 48px;
+
+//     @media (max-width: $tablet) {
+//         padding-top: 0px;
+//     }
+
+// }
+
+// &__box-items {
+//     display: flex;
+//     justify-content: space-between;
+
+//     @media (max-width: $tablet) {
+//         flex-direction: column-reverse;
+//         padding-top: 48px;
+//     }
+
+// }
+
+
+
+
+// &__box-content-text {
+//     padding-top: 24px;
+// }
+
+// &__box-content-year {
+//     padding-bottom: 39px;
+//     color: $color-gray-700;
+// }
+
+// &__box-content-btn {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// &__box-img {
+//     max-width: 544px;
+
+//     @media (max-width: $tablet) {
+//         max-width: 100%;
+//     }
+
+// }
