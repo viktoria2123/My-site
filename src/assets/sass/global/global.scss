@@ -30,7 +30,7 @@ body {
     left: 739px;
     top: 674px;
     letter-spacing: 0.1em;
-    background: #565656;
+    background: $color-gray-700;
     color: $color-white;
     cursor: pointer;
 
@@ -40,6 +40,13 @@ body {
             padding-left: 8px;
             color: $color-white;
         }
+    }
+
+    &:hover {
+        background: orange;
+        transform: scale(1.1);
+        transition: 1s;
+
     }
 
 }
