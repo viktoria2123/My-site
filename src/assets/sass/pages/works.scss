@@ -28,6 +28,10 @@
 
     }
 
+    // & == .works end
+
+
+    // & == .content
     .content {
         &__container {
             display: flex;
@@ -45,15 +49,16 @@
             justify-content: space-between;
 
             @media (max-width: $tablet) {
-                flex-direction: column-reverse;   
+                flex-direction: column-reverse;
             }
         }
 
         &__box-title {
             @media (max-width: $tablet) {
-                padding-top: 24px;   
+                padding-top: 24px;
             }
         }
+
         &__box-title::after {
             content: '';
             display: block;
@@ -86,9 +91,9 @@
                 max-width: 100%;
             }
         }
-
-
     }
+
+    // & == .content end
 }
 
 // &__box-content-title {
