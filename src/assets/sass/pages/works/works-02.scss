@@ -1,7 +1,7 @@
-.works-page-01 {
+.works-page-02 {
 
-    // & == .works-01
-    .works-01 {
+    // & == .works-02
+    .works-02 {
         &__container {
             display: flex;
             flex-direction: column;
@@ -37,7 +37,7 @@
         }
     }
 
-    // & == .works-01 end
+    // & == .works-02 end
 
     // & == .description
     .description {
