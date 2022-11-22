@@ -190,11 +190,11 @@
         &__container {
             display: flex;
             justify-content: space-between;
-            gap: 210px;
-            margin: 128px 0;
+            margin: 128px auto;
 
             @media (max-width: $tablet) {
                 display: block;
+                margin: 48px auto;
             }
         }
 
@@ -224,6 +224,7 @@
             flex-direction: column;
             gap: 20px;
             width: 100%;
+            max-width: 480px;
 
             @media (max-width: $tablet) {
                 margin-top: 48px;
@@ -253,16 +254,14 @@
 
         &__title-row {
             display: flex;
-            position: relative;
+            align-items: center;
+            gap: 8px;
         }
 
         &__title-text {
             color: $color-gray-500;
         }
 
-        &__title-row-arrow {
-            position: absolute;
-        }
 
         &__item {
             display: flex;
