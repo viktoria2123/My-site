@@ -138,6 +138,7 @@
 
             @media (max-width: $tablet) {
                 border-bottom: 2px solid $color-gray-500;
+                margin: 64px auto 80px;
             }
 
         }
@@ -148,4 +149,57 @@
     }
 
     // & == description end
+
+    // & == reply
+    .reply {
+
+        &__container {
+            max-width: 663px;
+            margin-bottom: 96px;
+        }
+
+        &__text {
+            color: $color-gray-500;
+            margin-bottom: 64px;
+        }
+
+        &__form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 43px;
+            margin-bottom: 48px;
+
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 24px;
+                margin-bottom: 22px;
+            }
+
+        }
+
+        &__fields {
+            width: 100%;
+        }
+
+        &__fields-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 48px;
+
+            @media (max-width: $tablet) {
+             align-items: flex-start;
+             margin-bottom: 22px;
+            }
+        }
+
+        &__fields-checkbox-text {
+            color: $color-gray-500;
+        }
+
+        &__btn {
+            padding: 8px 34px;
+            margin-top: 40px;
+        }
+    }
 }
