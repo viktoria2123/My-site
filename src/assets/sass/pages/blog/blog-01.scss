@@ -188,8 +188,8 @@
             margin-bottom: 48px;
 
             @media (max-width: $tablet) {
-             align-items: flex-start;
-             margin-bottom: 22px;
+                align-items: flex-start;
+                margin-bottom: 22px;
             }
         }
 
@@ -200,6 +200,64 @@
         &__btn {
             padding: 8px 34px;
             margin-top: 40px;
+        }
+    }
+
+    // & == reply end
+
+    // & == comments
+    .comments {
+
+        &__container {
+            max-width: 663px;
+            margin-bottom: 128px;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px
+        }
+
+        &__column-general,
+        &__column-subordinate {
+            display: flex;
+            gap: 24px;
+        }
+
+        &__img {
+            width: 70px;
+            height: 70px;
+        }
+
+        &__column-content-info {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+
+        &__column-content-info-data {
+            color: $color-gray-500;
+        }
+
+        &__column-content-text {
+            color: $color-gray-700;
+            max-width: 639px;
+            margin-bottom: 16px;
+        }
+
+        &__column-content-link-text {
+            color: $color-gray-500;
+            padding-left: 6px;
+        }
+
+        &__column-subordinate {
+            padding-left: 94px;
         }
     }
 }
