@@ -150,7 +150,9 @@
 // }
 
 
-
+.wrapper {
+    overflow: hidden;
+}
 
 .home-page {
 
@@ -174,34 +176,76 @@
     //home end
 
     //slider 
-    .slider {
+    .swiper {
 
         &__container {
+            width: 100%;
+            height: 100%;
             display: flex;
+            flex-direction: row;
             gap: 30px;
-            overflow: scroll;
         }
 
-        &__container::-webkit-scrollbar {
-            display: none;
+        &__slide {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
         }
 
-        &__container__container {
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
-        }
-
-        &__works-row {
+        &__slide-img {
+            display: block;
             width: 544px;
-            min-width: 544px;
+            height: 100%;
+            object-fit: cover;
         }
 
-        &__works-row-text {
+        &__slide-text {
             display: flex;
             align-items: center;
         }
+
+        // &__container {
+        //     display: flex;
+        //     gap: 30px;
+        //     overflow: scroll;
+        // }
+
+        // &__container::-webkit-scrollbar {
+        //     display: none;
+        // }
+
+        // &__container__container {
+        //     -ms-overflow-style: none;
+        //     /* IE and Edge */
+        //     scrollbar-width: none;
+        //     /* Firefox */
+        // }
+
+        // &__works-row {
+        //     width: 544px;
+        //     min-width: 544px;
+        // }
+
+        // &__works-row-text {
+        //     display: flex;
+        //     align-items: center;
+        // }
     }
 
     //slider end

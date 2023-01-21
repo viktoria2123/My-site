@@ -17,3 +17,19 @@ addEventListener('scroll', (event) => {
         }
     }
 });
+
+let swiper = new swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper__pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper__button-next",
+        prevEl: ".swiper__button-prev",
+    },
+});
