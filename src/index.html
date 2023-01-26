@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
     <link type="image/x-icon" href="./img/favicon.png" rel="shortcut icon">
     <link type="Image/x-icon" href="./img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -60,40 +62,51 @@
             </section>
             <!-- home end-->
 
-            <!-- swiper -->
 
-            <section class="swiper mySwiper">
-                <div class="swiper__container">
-                    <div class="swiper__slide">
-                        <img class="swiper__slide-img" src="./img/home/home-01.jpg" alt="">
-                        <p class="h6 swiper__slide-text">
-                            Mocha
-                        </p>
+
+
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider__works-row">
+                            <img class="slider__works-row-img" src="./img/home/home-01.jpg" alt="">
+                            <p class="h6 slider__works-row-text">
+                                Mocha
+                            </p>
+                        </div>
                     </div>
-                    <div class="swiper__slide">
-                        <img class="swiper__slide-img" src="./img/home/home-02.jpg" alt="">
-                        <p class="h6 swiper__slide-text">
-                            Mixkit Inspo
-                        </p>
+                    <div class="swiper-slide">
+                        <div class="slider__works-row">
+                            <img class="slider__works-row-img" src="./img/home/home-02.jpg" alt="">
+                            <p class="h6 slider__works-row-text">
+                                Mixkit Inspo
+                            </p>
+                        </div>
                     </div>
-                    <div class="swiper__slide">
-                        <img class="swiper__slide-img" src="./img/home/home-03.jpg" alt="">
-                        <p class="h6 swiper__slide-text">
-                            Abalone
-                        </p>
+                    <div class="swiper-slide">
+                        <div class="slider__works-row">
+                            <img class="slider__works-row-img" src="./img/home/home-03.jpg" alt="">
+                            <p class="h6 slider__works-row-text">
+                                Abalone
+                            </p>
+                        </div>
                     </div>
-                    <div class="swiper__slide">
-                        <img class="swiper__slide-img" src="./img/home/home-01.jpg" alt="">
-                        <p class="h6 swiper__slide-text">
-                            Dreamy
-                        </p>
+                    <div class="swiper-slide">
+                        <div class="slider__works-row">
+                            <img class="slider__works-row-img" src="./img/home/home-01.jpg" alt="">
+                            <p class="h6 slider__works-row-text">
+                                Dreamy
+                            </p>
+                        </div>
                     </div>
 
                 </div>
-                <div class="swiper__button-next"></div>
-                <div class="swiper__button-prev"></div>
-                <div class="swiper__pagination"></div>
-            </section>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
 
             <!-- <section class="slider">
                 <div class="slider__container">
@@ -304,9 +317,36 @@
 
 
     <!--Обовязково додавати потрібно для JS -->
+
     <script> var exports = {}; </script>
     <script src="@@webRoot/js/index.js"></script>
+
+    <!-- Swiper JS -->
+
+
+    <!-- Initialize Swiper -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>
